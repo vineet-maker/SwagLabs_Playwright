@@ -16,4 +16,4 @@ class LoginPage:
         self.page.click(self.login_button)
 
     def get_error_message(self):
-        return self.page.text_content(self.error_message)
+        return self.page.text_content("[data-test='error']")
